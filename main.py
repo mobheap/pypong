@@ -58,7 +58,7 @@ class PongGame:
         if self.hit_paddle(self.ball_pos, self.player1) or self.hit_paddle(self.ball_pos, self.player2):
             self.ball_speed[0] = -self.ball_speed[0]
         
-        # Ball goes out of bounds (left or right)
+        # Ball goes out of bounds
         if self.ball_pos[0] < 0:
             self.p2_score += 1
             self.reset_ball()
